@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--Taken from - https://getbootstrap.com/examples/starter-template/-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>J360 Presentation</title>
+    <meta name="description" content="Bootstrap Starter Template">
+    <meta name="author" content="J360">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body data-spy="scroll" data-target="#main-navbar">
+<!-- NAVBAR -->
+<nav class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">MG</a>
+        </div> <!-- end navbar-header -->
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#section-css">Basics</a></li>
+                <li><a href="#section-advanced">Advanced</a></li>
+                <!-- <li><a href="#section-sass">SASS</a></li> -->
+            </ul>
+        </div> <!-- end collapse -->
+    </div>
+</nav>
+
+<!-- (1) BANNER -->
+<div class="jumbotron">
+    <!-- See - https://getbootstrap.com/components/#jumbotron -->
+    <div class="container text-center">
+        <h1>Coding with CSS/SASS</h1>
+        <p>Learn about the basics and cool tricks you can perform using just HTML and CSS!</p>
+    </div>
+</div>
+
+<div class="container">
+    <!-- (2) BASICS -->
+    <section>
+        <div class="page-header" id="section-css">
+            <h2>CSS <small>The Basics.</small></h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="images/css-syntax.png" alt="A photo CSS syntax" class="img-responsive img-rounded">
+                <br>
+                <p>Selectors can be referenced by:</p>
+                <ul>
+                    <li>element</li>
+                    <li>#id</li>
+                    <li>.class</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-8">
+                <p>CSS stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets.</p>
+                <p>There are two ways to link your HTML documents to stylesheets, which can be internal or external. Internal styles are good for beginners because often there is not a whole lot of CSS being used. But generally, when you start becoming more advanced with html, and css, it's more common to link your HTML to an external stylesheet. The reason for this is that it saves time and space, by linking to external stylesheets, you can create a single CSS document that styles endless pages of html. <a href="http://www.w3schools.com/css/css_intro.asp" target="_blank">Example</a></p>
+                <p>CSS helps you control the layout, design, and display variations for a webpage.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- (3) MORE ADVANCED -->
+    <section>
+        <div class="page-header" id="section-advanced">
+            <h2>Tips and Tricks <small>See what you can do.</small></h2>
+        </div>
+
+        <div class="col-lg-6">
+        <p><img src="images/box-model.png" width="100%"></p>
+            <p><a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_border-style" target="_blank" class="btn btn-info" role="button">Borders</a> Style, width, color, individual sides, radius.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Margins</a> By individual side; auto, inherit.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Padding</a> Individual sides vs. shorthand.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Outline</a> Similar to borders; goes outside; specify style, color and width. </p>
+            <p><a href="#" class="btn btn-primary" role="button">Text</a> Color, alignment, decoration, transformation, fonts etc.</p>
+        </div>
+        <div class="col-lg-6">
+            <p><a href="http://www.w3schools.com/colors/colors_names.asp" target="_blank" class="btn btn-info" role="button">Colors</a> Can be referenced by RGB, Hexadecimal, or by name.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Backgrounds</a> Color and image backgrounds; background-position.</p>
+            <p><a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_dim_max_width" target="_blank" class="btn btn-info" role="button">Height/Width</a> Percentage vs. pixel; maximum and minimum.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Links</a> Visited, hover, active.</p>
+            <p><a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-type_ex" target="_blank" class="btn btn-info" role="button">Lists</a> Un-ordered vs. ordered lists; list markers.</p>
+            <p><a href="http://www.w3schools.com/css/css_table.asp" target="_blank" class="btn btn-info" role="button">Tables</a> Borders, width & height, horixontal & vertical alignment, padding.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Opacity</a> Transparency; hover transparency.</p>
+            <p><a href="#" class="btn btn-primary" role="button">NavBar</a> Vertical & horizontal navigation bars; full height; floating.</p>
+            <p><a href="http://www.w3schools.com/css/css_dropdowns.asp" target="_blank" class="btn btn-info" role="button">Dropdowns</a> You can drop down basic text, a menu, or even an image.</p>
+            <p><a href="http://www.w3schools.com/css/css_tooltip.asp" target="_blank" class="btn btn-info" role="button">Tooltips</a> Basic tooltip positioning; animated on hover. </p>
+            <p><a href="#" class="btn btn-primary" role="button">Galleries</a> Fixed galleries; auto vs. manual slideshows.</p>
+            <p> </p>
+        </div>
+
+    </section>
+    
+
+    <!-- (4) SASS -->
+   <!--  <section>
+    <br>
+        <div class="page-header" id="section-advanced">
+            <h2>SASS <small>For a few more features.</small></h2>
+        </div> --> <!-- end page-header -->
+
+        <!-- <div>
+            <p>
+            <a href="http://www.google.com" class="btn btn-info" role="button">Preprocessing</a>
+            <a href="http://www.google.com" class="btn btn-info" role="button">Variables</a>
+            <a href="http://www.google.com" class="btn btn-info" role="button">Nesting</a>
+            <a href="http://www.google.com" class="btn btn-info" role="button">Partials</a>
+            <a href="http://www.google.com" class="btn btn-info" role="button">Import</a>
+            <a href="http://www.google.com" class="btn btn-info" role="button">Mixins</a>
+            <a href="http://www.google.com" class="btn btn-info" role="button">Inheritance</a>
+            <a href="http://www.google.com" class="btn btn-info" role="button">Operators</a>
+            </p>
+        </div>
+
+    </section> -->
+</div> <!-- end container -->
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
